@@ -1,3 +1,9 @@
+# GIT Working Visualization
+
+<img src="./images/git_working_1.png" alt="drawing" style="width:700px;"/>
+ 
+
+
 # Git CLI commands 
 
 | Commands                                                   | Description                                                                          |
@@ -70,4 +76,4 @@
 ### Reference
 [video-3](https://www.youtube.com/watch?v=uR6G2v_WsRA&t=867s)              
 
-![](./images/git_working_1.png )<br>   
+
