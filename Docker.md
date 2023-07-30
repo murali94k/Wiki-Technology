@@ -26,7 +26,7 @@
 
 ## Docker Network
 
-<img src="./images/docker_network_1.png" alt="docker network" style="width:500px;"/>
+<img src="./images/docker_network_1.png" alt="docker network" style="width:800px;"/>
 
 | Commands                                                   | Description                                                                          |
 |------------------------------------------------------------|--------------------------------------------------------------------------------------|
