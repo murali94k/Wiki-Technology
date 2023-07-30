@@ -11,6 +11,11 @@
 | `docker exec -it <container_name> /bin/bash`| Exec into the container |
 |`docker cp ./sqldump.sql <container_name>:/tmp/`| Copy file from local into the container tmp dir|
 
+## Docker Run with a new bridge network
+```
+  docker run -it -d -p <host>:<container> --name <container_name> --net <network_name> <image_name>
+```
+
 ## Remove images/containers
 
 | Commands                                                   | Description                                                                          |
@@ -35,11 +40,17 @@
 |------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | `docker network inspect <network_name> / <container_id>` | |
 
-## Docker Run with a new bridge network
-```
-  docker run -it -d -p <host>:<container> --name <container_name> --net <network_name> <image_name>
-```
+## Docker push new image to docker repository
+   ```
+     docker login -u murali94k
+
+     docker tag <source_image_name>:<tag> murli94k/<target_image>:<tag>
+
+     docker push murli94k/<target_image>:<tag>
+   ```
+  
+
 
 > Note:
-  CMD is executed at docker run stage but RUN is executed at docker build stage
+  In Dockerfile, CMD is executed at docker run stage but RUN is executed at docker build stage
 	only the last CMD will be heeded
